@@ -1,4 +1,53 @@
-h1 {
-  color:  red;
+* {
+  color:  #DFCF99;
 }
 
+body {
+  background-color:  #000000;
+  color:  #ffffff;
+}
+.class-title {
+  color:  #7CB29C;
+}
+
+h1 {
+  color:  #DFCF99;
+}
+
+button {
+  width:  200px;
+  height:  50px;
+  border-radius: 10px;
+  color:  #dfcf99;
+  background-color: #D02204;
+  border-color: #D02204;
+  background: rgb(169,3,41); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(169,3,41,1)), color-stop(44%,rgba(143,2,34,1)), color-stop(100%,rgba(109,0,25,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* IE10+ */
+  background: linear-gradient(left, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* W3C */
+  font-size: 1.5rem;
+}
+
+hr {
+    height: 30px;
+    border-style: solid;
+    border-color: #ADAA48FF;
+    border-width: 2px 0 0 0;
+    border-radius: 30px;
+}
+hr:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: #ADAA48FF;
+    border-width: 0 0 2px 0;
+    border-radius: 30px;
+}
+.classTitles {
+  text-align: center;
+}
