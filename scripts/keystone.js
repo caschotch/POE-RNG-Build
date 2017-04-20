@@ -1,4 +1,4 @@
-var keystones = [
+var poeKeystones = [
   {
     name: "Acrobatics", 
     description: "30% Chance to Dodge Attacks\n50% less Armour and Energy Shield\n30% less chance to Block Spells and Attacks",
@@ -112,6 +112,6 @@ var keystones = [
   {
     name: "Zealot's Oath", 
     description: "Life Regeneration applies to Energy Shield instead of Life",
-    images: "images/keystones/Zeolot's_Oath_passive_icon.png"
+    images: "images/keystones/Zealots_Oath_passive_icon.png"
   }
 ];
