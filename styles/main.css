@@ -6,6 +6,10 @@ body {
   background-color:  #000000;
   color:  #ffffff;
 }
+.content {
+  min-height:  calc(100vh - 150px);
+}
+
 .class-title {
   color:  #7CB29C;
 }
@@ -50,4 +54,10 @@ hr:before { /* Not really supposed to work, but does */
 }
 .classTitles {
   text-align: center;
+}
+
+
+.footer {
+  height:  30px;
+  text-align:  center;
 }
