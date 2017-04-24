@@ -42,21 +42,21 @@ hr {
     border-width: 2px 0 0 0;
     border-radius: 30px;
 }
+
 hr:before { /* Not really supposed to work, but does */
-    display: block;
+    border-color: #ADAA48FF;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 0 0 2px 0;
     content: "";
+    display: block;
     height: 30px;
     margin-top: -31px;
-    border-style: solid;
-    border-color: #ADAA48FF;
-    border-width: 0 0 2px 0;
-    border-radius: 30px;
+
 }
 .classTitles {
   text-align: center;
 }
-
-
 .footer {
   height:  30px;
   text-align:  center;

@@ -37,6 +37,18 @@ function generateKeystones(){
   return y;
 }
 
+function generateSkills(){
+
+  var skillTemplate = 
+    "<h2>Your random skill will be " +
+    randomGen(poeSkills) +
+    "</h2>";
+
+  var y = document.getElementById('skillRan').innerHTML = skillTemplate;
+  return y;
+}
+
+
 var poeGen = document.getElementById('rollClass');
 
 poeGen.addEventListener('click', function(e) {
@@ -46,8 +58,8 @@ poeGen.addEventListener('click', function(e) {
   document.getElementById('classImage').innerHTML = "<img src='" + selection.images + "'>";
   document.getElementById('classAscendancy').innerHTML = selection.ascendancy;
 
-// call the entire keystoneGen generated array to then format and print
   generateKeystones();
+  generateSkills();
 });
 
 
