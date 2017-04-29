@@ -41,7 +41,7 @@ var poeKeystones = [
   },
   {
     name: "Elemental Equilibrium", 
-    description: "Enemies you hit with Elemental Damage temporarily get +25% Resistances to those Elements and −50% Resistances to other Elements",
+    description: "Enemies you hit with Elemental Damage temporarily get +25% Resistances to those Elements and &minus;50% Resistances to other Elements",
     images: "images/keystones/Elemental_Equilibrium_passive_icon.png"
   },
   {

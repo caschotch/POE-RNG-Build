@@ -54,6 +54,11 @@ hr:before { /* Not really supposed to work, but does */
     margin-top: -31px;
 
 }
+.responsive-image {
+
+  display:  block;
+  max-width:  100%;
+}
 .classTitles {
   text-align: center;
 }

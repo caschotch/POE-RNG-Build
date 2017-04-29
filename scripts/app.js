@@ -3,17 +3,15 @@ function randomGen(array) {
   return array[num];
 }
 
-
 function getKeystones(){
-var randomNum = Math.floor(Math.random() * (4 - 1)) + 1; //generates random number between 1 and 3
-
-let i = 0;
-let generatedArray = [];
-while (i < randomNum){
-  generatedArray.push(randomGen(poeKeystones));
-  i++;
-}
-return generatedArray;
+  var randomNum = Math.floor(Math.random() * (4 - 1)) + 1; //generates random number between 1 and 3
+  let i = 0;
+  let generatedArray = [];
+  while (i < randomNum){
+    generatedArray.push(randomGen(poeKeystones));
+    i++;
+  }
+  return generatedArray;
 }
 
 function genKeystoneArr(){
@@ -37,17 +35,23 @@ function generateKeystones(){
   return y;
 }
 
-function generateSkills(){
-
+function generateSkillsTemplate() {
+  var randomSkill = randomGen(poeSkills);
+  var strippedSkills = randomSkill.replace("_", " ");
   var skillTemplate = 
     "<h2>Your random skill will be " +
-    randomGen(poeSkills) +
+    "<a href=\"http://pathofexile.gamepedia.com/" + randomSkill + "\" target=\"_blank\">" +
+      strippedSkills +
+    "</a>" +
     "</h2>";
 
-  var y = document.getElementById('skillRan').innerHTML = skillTemplate;
-  return y;
+  return skillTemplate;
 }
 
+function generateSkills(){
+  var y = document.getElementById('skillRan').innerHTML = generateSkillsTemplate();
+  return y;
+}
 
 var poeGen = document.getElementById('rollClass');
 
@@ -55,7 +59,7 @@ poeGen.addEventListener('click', function(e) {
   const selection = randomGen(poeClass);
 
   document.getElementById('className').innerHTML = selection.class;
-  document.getElementById('classImage').innerHTML = "<img src='" + selection.images + "'>";
+  document.getElementById('classImage').innerHTML = "<img class=\"responsive-image\" src='" + selection.images + "'>";
   document.getElementById('classAscendancy').innerHTML = selection.ascendancy;
 
   generateKeystones();
